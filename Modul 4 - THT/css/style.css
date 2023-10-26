@@ -1,0 +1,95 @@
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+}
+
+.header ul li {
+  margin: 0 10px;
+}
+
+.header ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#gambar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; 
+}
+
+#gambar article {
+  text-align: center; 
+}
+
+
+.main {
+  flex: 2;
+  padding: 20px;
+}
+
+
+.main h2 {
+  text-align: center;
+  margin-top: 100px; 
+}
+
+.side {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer .copy {
+  margin: 0;
+}
+
+.footer .social-media ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer .social-media li {
+  margin-right: 20px;
+}
+
+.footer .social-media a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .social-media img {
+  width: 40px; 
+}
