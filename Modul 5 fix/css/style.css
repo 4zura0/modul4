@@ -1,0 +1,107 @@
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+  padding: 20px;
+}
+
+.content {
+  grid-area: content;
+  display: grid;
+  grid-template-areas:
+    "main side";
+  grid-template-columns: 2fr 1fr;
+}
+
+.main {
+  grid-area: main;
+  padding: 20px;
+}
+
+.side {
+  grid-area: side;
+  padding: 20px;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: #242424;
+  color: #fff;
+  padding: 20px;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.header ul li {
+  margin: 0 10px;
+}
+
+.header ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+#gambar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+#gambar article {
+  text-align: center;
+}
+
+#gambar1 img {
+  height: 150px;
+  width: auto;
+}
+
+.main h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer .copy {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.footer .social-media ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer .social-media li {
+  margin-right: 20px;
+}
+
+.footer .social-media a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .social-media img {
+  width: 40px;
+}

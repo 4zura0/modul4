@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Take Home Task 4</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="kuliah pemrograman web">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Geovanni Rikal Bunga">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        /* CSS internal yang digunakan untuk layout */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header"
+                "content"
+                "footer";
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        }
+
+        .header {
+            grid-area: header;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content-container {
+            grid-area: content;
+            display: grid;
+            grid-template-areas:
+                "main side";
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .main {
+            grid-area: main;
+            padding: 20px;
+        }
+
+        .side {
+            grid-area: side;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>|</li>
+                <li><a href="#">About</a></li>
+                <li>|</li>
+                <li><a href="#">Projects</a></li>
+                <li>|</li>
+                <li><a href="#">Achievement</a></li>
+                <li>|</li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="content-container">
+            <div class="main">
+                <h2> Welcome here! </h2>
+                <p class="penulis">ditulis oleh <a href="#">Geovanni Rikal Bunga</a>. Pada 25 Oktober 2023.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. cumque quia elus, est minima asperiores iste.
+                    Quidem voluptatem laborum quo nam ex cupidatate tenetur? Soluta, elus, dolor nesciunt maiores aliquam sunt
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. cumque quia elus, est minima asperiores iste.
+                    Quidem voluptatem laborum quo nam ex cupidatate tenetur? Soluta, elus, dolor nesciunt maiores aliquam sunt.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. cumque quia elus, est minima asperiores iste.
+                    Quidem voluptatem laborum quo nam ex cupidatate tenetur? Soluta, elus, dolor nesciunt maiores aliquam sunt
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. cumque quia elus, est minima asperiores iste.
+                    Quidem voluptatem laborum quo nam ex cupidatate tenetur? Soluta, elus, dolor nescu
+                </p>
+            </div>
+            <div class="side">
+                <h3> Tentang Penulis</h3>
+                <section id="gambar1">
+                    <img src="img/Foto Studio Geo.png" alt="Foto Studio Geo">
+                </section>
+                <p>As a third-year student majoring in Computer Science at Pertamina University, I have a lot of experience working in teams and am ready to handle pressure. I interested to exploring new things that challenge myself and have a keen interest in an organization, with a proven track record of significant involvement in various organizational activities and have high interest in designing especially.
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="copy">Copyright 2023.Gevan Rikal</p>
+            <div class="social-media">
+                <ul>
+                    <li><a href="https://www.instagram.com/gevanrikal_"><img src="img/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.facebook.com/gevanrikal"><img src="img/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.linkedin.com/in/gevanrikal"><img src="img/linkedn.png" alt="LinkedIn"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
